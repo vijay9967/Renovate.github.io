@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Renovate Login</title>
+        <link rel="stylesheet" href="Styles/loginstyle.css">
+        </head>
+        <body>
+            <div class="hero">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                    <button type="button" class="toggle-button" onclick="login()">Log in</button>
+                    <button type="button" class="toggle-button" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100013808108239" ><img src="image/fb.svg"></a>
+                    <a href="https://www.instagram.com/vijay.mm/?hl=en" ><img src="image/insta.svg"></a>
+                    <a href="https://developer.twitter.com/" ><img src="image/twitter.svg"></a>
+            </div>
+            <form id="login" class="input-group" action="logIn1.php" method="POST">
+                <input type="text" name="email" id="email" class="input-field" placeholder="Email/User ID" required>
+                <input type="password" name="password" id="password" class="input-field" placeholder="Enter Password" required>
+                <button name="submit-login" type="submit" value="Sign in" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group" action="signUp.php" method="POST">
+                <input type="text" name="name" id="name" class="input-field" placeholder="User ID" required>
+                <input type="email" name="email" class="input-field" placeholder="Email ID" required>
+				<input type="text" name="address" class="input-field" placeholder="Address" required>
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+                <button name="submit-sign" type="submit" value="Sign up" class="submit-btn">Register</button>
+				</form>
+            </div>
+            </div>
+
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "190px";
+
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "90px";
+
+                }
+            </script>
+        </body>
+        </html>
