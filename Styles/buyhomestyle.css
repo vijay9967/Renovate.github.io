@@ -134,7 +134,7 @@ h2{
 .mobile-icon{display: none;}
 
 
-/*//////// Responsive queries 
+/*//////// Responsive queries //////////*/
 
 @media only screen and (max-width: 1180px){
 	.main-content-header{
@@ -179,7 +179,7 @@ h2{
 
 	h1{font-size: 180%;}
 }
-//////////*/
+
 
 
 
